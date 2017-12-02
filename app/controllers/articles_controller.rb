@@ -16,4 +16,17 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
   end
+
+  def edit
+    @article = Article.find(params[:id])
+  end
+
+  def update
+   article_params = params.require(:article).permit(:title, :text)
+   @article = Article.find(params[:id])
+   @article.attributes = article_params
+   @article.save
+   redirect_to article_path(@article)
+  end
+
 end
