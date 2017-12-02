@@ -29,7 +29,10 @@ class ArticlesController < ApplicationController
    article_params = params.require(:article).permit(:title, :text)
    @article = Article.find(params[:id])
    @article.attributes = article_params
-   @article.save
-   redirect_to article_path(@article)
+   if @article.save
+       redirect_to article_path(@article)
+   else
+     render 'edit'
+   end
   end
 end
