@@ -1,0 +1,89 @@
+[33mcommit 50e561ada64f97ed21cfc24f889237a89f71c4b1[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sun Dec 3 10:01:27 2017 +0100
+
+    Move form to partial
+
+[33mcommit 2c17a50db625e3f134be8b07ca7741ff90e23125[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sun Dec 3 09:50:14 2017 +0100
+
+    Rename partial with error messages
+
+[33mcommit fcc24559b9893719c8720d40bd9e46b9b55797a4[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 17:01:55 2017 +0100
+
+    Changge orderity
+
+[33mcommit 7c4677248c6f854d555a65ba6c13c89380668e17[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 16:55:33 2017 +0100
+
+    Add validations for edit
+
+[33mcommit 465c6fc573011406e4eea7516aed9adee7118ae6[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 16:32:11 2017 +0100
+
+    add if in controlers
+
+[33mcommit 05e6053858dac494bd7e466c8a1ab48abe0221ce[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 15:41:01 2017 +0100
+
+    add edit and update function
+
+[33mcommit 6190062df302d3566d95d6b6cd91a3250d3ee75d[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 15:08:57 2017 +0100
+
+    add simple navigation
+
+[33mcommit 9eedde082c9ce507c3a6894508ff1c2a7f319385[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 14:44:11 2017 +0100
+
+    Create view for articles listing
+
+[33mcommit d22b74dd0fe1c8bf057fcbf6e8eb1dc9c476d2be[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 13:29:34 2017 +0100
+
+    Add Article Show
+
+[33mcommit 3a15800c2d1cf264c403e011fd38d6035e42751d[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 13:07:01 2017 +0100
+
+    Migrate  Articles to SQL
+
+[33mcommit 9d58c8c2ab128f81c0fdf047da1f02b10619ff51[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 12:12:52 2017 +0100
+
+    create form for new article
+
+[33mcommit d427db5f3b72f2b53419459676563cd46601de5d[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 11:17:49 2017 +0100
+
+    Add Articles Controller with index action
+
+[33mcommit 0fda114d0715236da0262985e5f3fea46b0c2e2c[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 10:26:00 2017 +0100
+
+    Change root_path to welcome controller
+
+[33mcommit e2d77440c412c457459d42ba0c3bbc2159b4b025[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 10:13:31 2017 +0100
+
+    Add Welcome Controller
+
+[33mcommit edf54a9a9e87faa6a3e3af7b1c9ba5a35ff05f6e[m
+Author: Dejwoon <d.poddolny@gmail.com>
+Date:   Sat Dec 2 09:36:26 2017 +0100
+
+    initial commit
