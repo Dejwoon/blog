@@ -1,5 +1,5 @@
 <%= form_for @article do |f| %>
-<%= render 'error_messages' %>
+<%= render 'common/error_messages', model: @article %>
   <p>
      <%= f.label :title %>
      <%= f.text_field :title %>
