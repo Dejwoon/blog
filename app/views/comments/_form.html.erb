@@ -1,5 +1,5 @@
 
-<%= form_for(@article.comments.build) do |f| %>
+<%= form_for([@article, @article.comments.build]) do |f| %>
 <%= f.hidden_field :article_id %>
   <p>
     <%= f.label :commenter %>
