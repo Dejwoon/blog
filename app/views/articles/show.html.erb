@@ -12,33 +12,11 @@
 <%= @article.text %>
 </p>
 
-
 <h2>Comments</h2>
 <% @article.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+  <%= render 'comments/comment', comment: comment %>
+  <% end %>
 
-
-<%= form_for(@article.comments.build) do |f| %>
-<%= f.hidden_field :article_id %>
-  <p>
-    <%= f.label :commenter %>
-    <%= f.text_field :commenter %>
-  </p>
-  <p>
-      <%= f.label :body %>
-      <%= f.text_area :body %>
-  </p>
-  <p>
-      <%= f.submit %>
-  </p>
-<% end %>
+<%= render 'comments/form' %>
 
 <%= link_to 'Back', articles_path %>
