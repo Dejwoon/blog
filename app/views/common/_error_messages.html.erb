@@ -2,7 +2,7 @@
   <div id="error_explanation">
     <h2>
       <%= pluralize(model.errors.count, "error") %> prohibited
-        this <%= model.class %> from being saved:
+        this is <%=model.class%> from being saved:
     </h2>
     <ul>
       <% model.errors.full_messages.each do |msg| %>
