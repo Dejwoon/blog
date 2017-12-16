@@ -1,14 +1,16 @@
 <%= form_for @article do |f| %>
 <%= render 'common/error_messages', model: @article %>
- <p>
+ <div class="form-group">
     <%= f.label :title %>
-    <%= f.text_field :title %>
- </p>
- <p>
+    <%= f.text_field :title, class: "form-control" %>
+ </div>
+ <div class="form-group">
     <%= f.label :text %>
-    <%= f.text_area :text %>
- </p>
- <p>
-    <%= f.submit %>
- </p>
+    <%= f.text_area :text, class: "form-control"  %>
+ </div>
+ <div class="form-group">
+    <%= f.label :tags %>
+    <%= f.text_field :tags, class: "form-control"  %>
+ </div>
+ <button type="submit" class="btn btn-default">Submit</button>
 <% end %>

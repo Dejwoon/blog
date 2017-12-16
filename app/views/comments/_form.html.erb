@@ -1,4 +1,4 @@
-<%= form_for([@article, @article.comments.build]) do |f| %>
+<%= form_for([@article, @comment]) do |f| %>
 <%= render 'common/error_messages', model: @comment %>
   <%= f.hidden_field :article_id %>
  <p>
