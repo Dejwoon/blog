@@ -25,6 +25,9 @@
          <%= link_to "Destroy", article_path(article),
              method: :delete, data: { confirm: "Are you sure?" },
              class: "btn btn-xs btn-danger" %>
+             <div class="list-group-item-text">
+         <%= article.author.email%>
+       </div>
        </div>
      </div>
    <% end %>

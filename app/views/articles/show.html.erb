@@ -7,6 +7,9 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </div>
+<div class="list-group-item-text">
+         <%= @article.author.email%>
+       </div>
 <h2>Comments</h2>
 <% @article.comments.each do |comment| %>
  <%= render 'comments/comment',  comment: comment %>
