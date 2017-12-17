@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<% if alert %>
+   <div class="alert alert-danger">
+     <%= alert %>
+   </div>
+ <% end %>
   <head>
 
     <p class="notice"><%= notice %></p>
@@ -9,6 +14,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+
+
+
+
     <div>
  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
  </div>
