@@ -11,6 +11,7 @@
   <strong>Author:</strong>
     <%= @article.author.email %>
 </div>
+<%= pluralize(@article.likes.count, "person") %> liked this article
 
 <% if @like.persisted? %>
   <%= link_to "Unlike",  article_like_path(@article, @like), method: :delete %>
