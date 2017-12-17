@@ -1,10 +1,13 @@
 class ArticlePolicy < ApplicationPolicy
- def update?
-  record.author == user
- end
+   def permitted_attributes
+     [:title, :text, :tags]
+   end
 
+   def update?
+     record.author == user
+   end
 
   def destroy?
-    record.author == user
-  end
-end
+     record.author == user
+   end
+ end
