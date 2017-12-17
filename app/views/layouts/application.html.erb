@@ -9,13 +9,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <div>
+ <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+ </div>
   </head>
+
 
   <body>
 
     <div class="container">
     <%= yield %>
     </div>
+
+
 
 
   </body>
