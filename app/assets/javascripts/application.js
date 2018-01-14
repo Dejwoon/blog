@@ -14,4 +14,11 @@
 //= require_tree .
 
 
-alert('Rails!!!!!')
+//alert('Rails!!!!!')
+window.addEventListener("load", function() {
+  document.getElementById("q").value = "form javaScript";
+
+  document.getElementById("q").addEventListener('keypress', function() {
+   alert('click!!!!')
+ })
+ });
