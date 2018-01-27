@@ -53,7 +53,7 @@ end
 
 def update
    if @article.update(permitted_attributes(@article))
-  redirect_to articles_path(@article)
+  redirect_to article_path(@article)
     else
       render 'edit'
     end
