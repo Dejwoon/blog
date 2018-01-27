@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
       render
     end
   end
-endas
+end
    def summary
      respond_to do |format|
        format.json do
