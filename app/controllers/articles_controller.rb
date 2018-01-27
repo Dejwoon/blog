@@ -1,17 +1,30 @@
 class ArticlesController < ApplicationController
-  before_action :find_article, only: [:destroy, :show, :edit, :update]
+  before_action :find_article, only: [:destroy, :show, :edit, :update, :summary]
   before_action :authorize_article, only: [:edit, :update, :destroy]
   def index
-    params[:q]
-    @articles = Article.includes(:author).order(created_at: :desc)
-    if params[:q].present?
-      @articles = @articles.select do |article|
-        article.tags.include?(params[:q])
-      end
+  @articles = Article.includes(:author).order(created_at: :desc)
+  @articles = @articles.where("? = any(tags)", params[:q]) if params[:q].present?
+  respond_to do |format|
+    format.json do
+      render json: @articles
     end
+
+    format.html do
+      render
+    end
+  end
+endas
+   def summary
+     respond_to do |format|
+       format.json do
+         render json: {
+           id: @article.id,
+           likes: @article.likes.count,
+           comments: @article.comments.count
+         }
+       end
+     end
    end
-
-
 
 
 def new

@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   root  'welcome#index'
 
   resources :articles do
+  member do
+  get  :summary
+ end
   resources :comments, only: [:create, :destroy]
   resources :likes, only: [:create, :destroy]
   end
