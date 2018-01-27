@@ -67,7 +67,7 @@ def update
  private
 
  def article_params
-    params.require(:article).permit(:title, :text, :tags)
+    params.require(:article).permit(:title, :text, :tags, :banner)
   end
 
 def find_article
