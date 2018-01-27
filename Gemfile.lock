@@ -232,7 +232,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.7)
   byebug
   capybara (~> 2.13)
-  carrierwave
+  carrierwave (~> 1.0)
   cloudinary
   coffee-rails (~> 4.2)
   devise
