@@ -6,6 +6,7 @@ class CommentsController < ApplicationController
   @comment.attributes = comment_params
   if @comment.save
       redirect_to article_path(@comment.article_id)
+      UserMailer.article_commented(Article.first).deliver_now
   else
       @like = Like.find_or_initialize_by(article: @article, user: current_user)
       render 'articles/show'
