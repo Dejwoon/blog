@@ -11,6 +11,8 @@ gem 'jquery-rails'
 
 gem 'devise'
 
+gem 'sidekiq'
+
 gem "pundit"
 gem 'bootstrap-sass', '~> 3.3.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
